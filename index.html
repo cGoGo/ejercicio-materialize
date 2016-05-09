@@ -6,17 +6,53 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+      <link rel="stylesheet" href="css/styles.css">
     </head>
+  <!-- BODY -->  
     <body>
-
-
-
+			<header>
+      <!-- Dropdown -->  
+        <div class="opacity">
+          <ul id="med-integrativa" class="dropdown-content">
+            <li><a href="#!">Terapia Inmunocelular</a></li>
+            <li><a href="#!">Homotoxicología</a></li>
+            <li><a href="#!">Medicina Ortomolecular</a></li>
+            <li><a href="#!">Ozonoterapia</a></li>
+            <li><a href="#!">Terapia Neural</a></li>
+          </ul>
+          <ul id="complementarias" class="dropdown-content">
+            <li><a href="#!">Acupuntura</a></li>
+            <li><a href="#!">Flores de Bach</a></li>
+            <li><a href="#!">Auriculoterapia</a></li>
+            <li><a href="#!">Reiki</a></li>
+          </ul>
+        <!-- Boton responsivo -->  
+          <nav>
+            <div class="nav-wrapper">
+              <div class="container">
+                <a href="#!" class="brand-logo">
+                  <img src="img/logo.png" alt="" class="logo">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <!-- Menu -->  
+                <ul class="right hide-on-med-and-down" id="mobile-demo">
+                  <li><a class="dropdown-button light-green-text text-darken-4" href="#!" data-activates="med-integrativa">Medicina Integrativa</a></li>
+                  <li><a class="dropdown-button light-green-text text-darken-4" href="#!" data-activates="complementarias">Terapias Complementarias</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+			</header>
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script>
       	$( document ).ready(function(){
       		$(".button-collapse").sideNav();
+          $(".dropdown-button").dropdown();
       	})
       </script>
     </body>
