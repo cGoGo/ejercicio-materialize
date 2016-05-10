@@ -1,13 +1,38 @@
-header {
+header, .final{
 	background-image: url(../img/fondo.jpg);
 	width: 100%;
 }
 .opacity {
 	background-color: rgba(113, 149, 0, 0.2);
 }
+.filtro {
+	background-color: rgba(225, 225, 225, 0.2);
+}
 .logo {
-	width: 125px;
+	width: 25%;
+	min-width: 110px;
 }
 nav {
 	background-color: rgba(255, 255, 255, 0.5);
+}
+.lema {
+	font-family: "Dancing Script";
+	margin-top: 15%;
+	font-size: 5em;
+	line-height: 1.0;
+}
+.cma {
+	padding-bottom: 15%;
+	font-size: 2em;
+}
+
+/* UTILIDADES */
+.display-block {
+	display: block;
+}
+.w-100 {
+	width: 100%;
+}
+.pd-2 {
+	padding: 2% 0;
 }
